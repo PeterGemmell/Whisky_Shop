@@ -16,7 +16,7 @@ public class CustomerController {
     CustomerRepository customerRepository;
 
     @GetMapping(value = "/customers")
-    public ResponseEntity<List<Customer>> getAllCustomer(){
+    public ResponseEntity<List<Customer>> getAllCustomers(){
         return new ResponseEntity<>(customerRepository.findAll(), HttpStatus.OK);
     }
 
@@ -29,7 +29,7 @@ public class CustomerController {
     public ResponseEntity findByUserNameAndPassword(
             @RequestParam(name = "userName") String userName,
             @RequestParam(name = "password") String password){
-        return new ResponseEntity(customerRepository.findByUserNameAndPassword(userName,password), HttpStatus.OK);
+        return new ResponseEntity(customerRepository.findByUserNameAndPassword(userName, password), HttpStatus.OK);
     }
 
     @PostMapping(value = "/customers")

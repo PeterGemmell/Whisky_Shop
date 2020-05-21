@@ -1,8 +1,11 @@
 package com.example.whiskyshop.whiskyservice.models;
 
 
-import org.springframework.data.annotation.Id;
+//import org.springframework.data.annotation.Id;
 
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.*;
 
 @Entity
@@ -48,8 +51,7 @@ public class Whisky {
     private Boolean inCart;
 
 
-    public Whisky(String distilleryName, String productName, String region, String strength, String volume, String imgLink,
-                  Double costPrice, Double retailPrice, String productInfo, Integer quantityInCart, Boolean inCart){
+    public Whisky(String distilleryName, String productName, String region, String strength, String volume, String imgLink, Double costPrice, Double retailPrice, String productInfo, Integer quantityInCart, Boolean inCart){
         this.distilleryName = distilleryName;
         this.productName = productName;
         this.region = region;
@@ -65,6 +67,14 @@ public class Whisky {
 
     public Whisky(){
 
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getDistilleryName() {

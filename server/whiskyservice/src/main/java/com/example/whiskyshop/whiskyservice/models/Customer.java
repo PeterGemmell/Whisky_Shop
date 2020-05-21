@@ -30,7 +30,7 @@ public class Customer {
     private String password;
 
 
-    @JsonIgnoreProperties(value="customers")
+    @JsonIgnoreProperties(value = "customers")
     @OneToMany(mappedBy = "customer", fetch = FetchType.LAZY)
     private List<Order> orders;
 
@@ -48,6 +48,13 @@ public class Customer {
 
     }
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public String getFirstName() {
         return firstName;

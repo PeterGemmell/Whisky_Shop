@@ -37,7 +37,7 @@ public class DataLoader implements ApplicationRunner {
         Whisky whisky2 = new Whisky("Clynelish", "14 Year Old", "Highland", "46%", "70cl", "https://cdn.shopify.com/s/files/1/0248/6121/2758/products/5000281016535_T1_1024x1024@2x.jpg", 12.99, 47.49, "Clynelish whisky has an agreeable long finish that leaves a lingering fresh fruity flavour.", 0, false);
         whiskyRepository.save(whisky2);
 
-        Whisky whisky3 = new Whisky("Diageo", "Cladach", "Highland", "57%", "70cl", "https://cdn.shopify.com/s/files/1/0248/6121/2758/products/cladach_1024x1024@2x.png", 40.00, 156.99, "A gloriously pleasing and affirming whisky that captures the character of coastal malts perfectly.", 0, false);
+        Whisky whisky3 = new Whisky("Diageo", "Cladach", "Highland", "57%", "70cl", "https://blog.thewhiskyexchange.com/core/wp-content/uploads/2018/09/Cladach.jpg", 40.00, 156.99, "A gloriously pleasing and affirming whisky that captures the character of coastal malts perfectly.", 0, false);
         whiskyRepository.save(whisky3);
 
         Whisky whisky4 = new Whisky("The Oban Bay", "The Nights Watch", "Highland", "43%", "70cl", "https://cdn.shopify.com/s/files/1/0248/6121/2758/products/5000267173795_T2_1024x1024@2x.jpg", 14.99, 45.99, "The liquids richness is balanced with a woody, spicy dryness that The Nights Watch could enjoy even on the coldest of nights.", 0, false);
@@ -73,16 +73,16 @@ public class DataLoader implements ApplicationRunner {
         Whisky whisky14 = new Whisky("Mortlach", "20 Year Old", "Speyside", "43.4%", "70cl", "https://cdn.shopify.com/s/files/1/0248/6121/2758/products/mortlach-20-03_1024x1024@2x.jpg", 49.56, 205.49, "A selection of our very best Single Malt Scotch Whisky has been matured for a minimum of 20 years.", 0, false);
         whiskyRepository.save(whisky14);
 
-        Whisky whisky15 = new Whisky("Pittyvaich", "28 Year Old", "Speyside", "52.1%", "70cl", "https://cdn.shopify.com/s/files/1/0248/6121/2758/products/Pittyvaich-with-box_1024x1024@2x.png", 32.56, 330.49, "From a closed distillery, the oldest 1989 Pittyvaich yet in this series, with only 4680 bottles available worldwide.", 0, false);
+        Whisky whisky15 = new Whisky("Pittyvaich", "28 Year Old", "Speyside", "52.1%", "70cl", "https://www.gourmetencasa-tcm.com/5952-product_default/pittyvaich-28-year-old-70-cl.jpg", 32.56, 330.49, "From a closed distillery, the oldest 1989 Pittyvaich yet in this series, with only 4680 bottles available worldwide.", 0, false);
         whiskyRepository.save(whisky15);
 
         Whisky whisky16 = new Whisky("Glenkinchie", "12 Year Old", "Lowland", "43%", "70cl", "https://cdn.shopify.com/s/files/1/0248/6121/2758/products/5000281021942_T1_1024x1024@2x.jpg", 23.45, 42.49, "This Lowland Single Malt is perfect as an aperitif or at the start of a meal thanks to its fragrant, light and appetising body and taste.", 0, false);
         whiskyRepository.save(whisky16);
 
-        Whisky whisky17 = new Whisky("Caledonian", "The Cally", "Lowland", "53.3%", "70cl", "https://cdn.shopify.com/s/files/1/0248/6121/2758/products/the-cally-40yo-box_1024x1024@2x.png", 245.35, 752.35, "Part of the 2015 Special Releases. Aromas of toffee popcorn, grilled pineapple and honeycomb. Toasty and oaky, but not heavy.", 0, false);
+        Whisky whisky17 = new Whisky("Caledonian", "The Cally", "Lowland", "53.3%", "70cl", "https://www.thewhiskyworld.com/images/caledonian-the-cally-1974-40-year-old-special-releases-2015-p5546-9912_image.jpg", 245.35, 752.35, "Part of the 2015 Special Releases. Aromas of toffee popcorn, grilled pineapple and honeycomb. Toasty and oaky, but not heavy.", 0, false);
         whiskyRepository.save(whisky17);
 
-        Whisky whisky18 = new Whisky("Diageo", "Collectivum", "Lowland", "57.3%", "70cl", "https://cdn.shopify.com/s/files/1/0248/6121/2758/products/2017-sr-collectivum_resize-min_1024x1024@2x.png", 56.23, 158.49, "A natural cask strength blended Malt Whisky from all twenty eight operating single malt distilleries owned by Diageo.", 0, false);
+        Whisky whisky18 = new Whisky("Diageo", "Collectivum", "Lowland", "57.3%", "70cl", "https://m.hng.io/catalog/product/6/5/659908_1.jpg?io=PDP", 56.23, 158.49, "A natural cask strength blended Malt Whisky from all twenty eight operating single malt distilleries owned by Diageo.", 0, false);
         whiskyRepository.save(whisky18);
 
         Whisky whisky19 = new Whisky("Glenkinchie", "Distillers Edition", "Lowland", "43%", "70cl", "https://cdn.shopify.com/s/files/1/0248/6121/2758/products/glen_1024x1024@2x.jpg", 23.45, 65.49, "A secondary maturation in a specifically chosen Amontillado cask wood develops the unique flavour.", 0, false);

@@ -26,6 +26,12 @@ public class Whisky {
     @Column(name="region")
     private String region;
 
+    @Column(name="latitude")
+    private Double latitude;
+
+    @Column(name="longitude")
+    private Double longitude;
+
     @Column(name="strength")
     private String strength;
 
@@ -51,10 +57,12 @@ public class Whisky {
     private Boolean inCart;
 
 
-    public Whisky(String distilleryName, String productName, String region, String strength, String volume, String imgLink, Double costPrice, Double retailPrice, String productInfo, Integer quantityInCart, Boolean inCart){
+    public Whisky(String distilleryName, String productName, String region, Double latitude, Double longitude, String strength, String volume, String imgLink, Double costPrice, Double retailPrice, String productInfo, Integer quantityInCart, Boolean inCart){
         this.distilleryName = distilleryName;
         this.productName = productName;
         this.region = region;
+        this.latitude = latitude;
+        this.longitude = longitude;
         this.strength = strength;
         this.volume = volume;
         this.imgLink = imgLink;
@@ -67,6 +75,22 @@ public class Whisky {
 
     public Whisky(){
 
+    }
+
+    public Double getLatitude() {
+        return latitude;
+    }
+
+    public void setLatitude(Double latitude) {
+        this.latitude = latitude;
+    }
+
+    public Double getLongitude() {
+        return longitude;
+    }
+
+    public void setLongitude(Double longitude) {
+        this.longitude = longitude;
     }
 
     public Long getId() {

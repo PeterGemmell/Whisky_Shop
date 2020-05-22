@@ -35,7 +35,7 @@ class WhiskyserviceApplicationTests {
 
 	@Test
 	public void canSaveWhiskyToStock(){
-		Whisky whisky1 = new Whisky("Dalwhinnie", "Winters Frost", "Highland", "43%", "70cl", "https://cdn.shopify.com/s/files/1/0248/6121/2758/products/5000267173757_T2_1024x1024@2x.jpg", 12.99, 33.99, "Extreme conditions are responsible for shaping the signature Dalwhinnie Winter's Frost honeyed sweetness and spicy warmth.", 0, false);
+		Whisky whisky1 = new Whisky("Dalwhinnie", "Winters Frost", "Highland", 56.940380, -4.237860, "43%", "70cl", "https://cdn.shopify.com/s/files/1/0248/6121/2758/products/5000267173757_T2_1024x1024@2x.jpg", 12.99, 33.99, "Extreme conditions are responsible for shaping the signature Dalwhinnie Winter's Frost honeyed sweetness and spicy warmth.", 0, false);
 		whiskyRepository.save(whisky1);
 	}
 

@@ -3,7 +3,7 @@ import ShopContainer from './containers/ShopContainer';
 import WhiskyContainer from './containers/WhiskyContainer';
 import ShoppingCart from './components/cart/ShoppingCart';
 import ShoppingCartOverlay from './components/cart/ShoppingCartOverlay';
-import Dropdown from 'react-overlays/Dropdown';
+// import Dropdown from 'react-overlays/Dropdown';
 import WhiskyList from './components/whiskies/WhiskyList';
 import Whisky from './components/whiskies/Whisky';
 import WhiskyDetail from './components/whiskies/WhiskyDetail';

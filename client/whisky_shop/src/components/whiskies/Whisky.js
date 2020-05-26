@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
+import DistilleryMap from './WhiskyMap.js';
 
 
 class Whisky extends Component {
@@ -13,6 +14,7 @@ class Whisky extends Component {
 
       <div className="items">
       <img src={this.props.whisky.imgLink} width="300"></img>
+      <DistilleryMap distillery={this.props.whisky.distilleryName} />
       <div className="info">
       <p><b><u>{this.props.whisky.distilleryName}</u></b></p>
       <p><i>Name </i>{this.props.whisky.productName}</p>

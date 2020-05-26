@@ -23,6 +23,7 @@ class WhiskyDetail extends Component {
        <h2> {this.props.whisky.strength} </h2>
        <h2> {this.props.whisky.volume} </h2>
        <h2> £{this.props.whisky.retailPrice} </h2>
+       <h2> {this.props.whisky.productInfo} </h2>
        </div>
      )
    }

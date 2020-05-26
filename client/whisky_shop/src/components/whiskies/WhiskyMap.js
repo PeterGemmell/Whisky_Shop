@@ -4,15 +4,15 @@ import {Icon} from "leaflet"
 
 const DistilleryMap = (props) => {
   return (
-    <Map center={[40.730610,-73.935242]} zoom={12}>
+    <Map center={[props.latitude, props.longitude]} zoom={11}>
     <TileLayer
       url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
-      attribution='Josephs Map'
+      attribution='Distillery Map'
       />
 
-      <Marker position={[40.730610,-73.935242]} draggable="true">
+      <Marker position={[props.latitude, props.longitude]}>
       <Popup>
-      <p>Hello</p>
+      <p><b>The {props.distillery} Distillery</b></p>
       </Popup>
       </Marker>
     </Map>

@@ -16,5 +16,14 @@ code {
   width: 30%;
  height: 30vh;
 
+}
 
+.items {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0.5em 1em 0.5em 1em;
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(10,20,10,0.75);
+  -moz-box-shadow: 0px 1px 2px 0px rgba(10,20,10,0.75);
+  box-shadow: 0px 1px 2px 0px rgba(10,20,10,0.75);
 }

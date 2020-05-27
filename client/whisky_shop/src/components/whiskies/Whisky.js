@@ -6,7 +6,13 @@ import DistilleryMap from './WhiskyMap.js';
 class Whisky extends Component {
 
   constructor(props){
-    super(props)
+    super(props);
+    this.handleAddToCart = this.handleAddToCart.bind(this);
+
+  }
+
+  handleAddToCart(e){
+    this.props.addToCart(this.props.whisky);
   }
 
   render(){
@@ -21,12 +27,17 @@ class Whisky extends Component {
       <p><b>Region </b>{this.props.whisky.region}</p>
       <p><b>Strength </b>{this.props.whisky.strength}</p>
       <p><b>Volume </b>{this.props.whisky.volume}</p>
-      <p> £ {this.props.whisky.retailPrice} </p>
       <p><b>Product Info</b></p>
       <p> {this.props.whisky.productInfo} </p>
+      <span>£ {this.props.whisky.retailPrice}</span>
+      <button onClick={this.handleAddToCart}
+      disabled={this.props.whisky.inCart}
+      className={this.props.whisky.inCart ? "button-disabled" : ""}>
+      {this.props.whisky.inCart ? "Item in cart" : "Add to cart"}
+      </button>
+      <br></br>
+       </div>
       </div>
-      </div>
-
     )
   }
 }

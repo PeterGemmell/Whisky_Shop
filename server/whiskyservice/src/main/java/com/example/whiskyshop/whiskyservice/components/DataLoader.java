@@ -40,7 +40,7 @@ public class DataLoader implements ApplicationRunner {
         Whisky whisky3 = new Whisky("Diageo", "Cladach", "Highland", 57.658360, -2.958570, "57%", "70cl", "https://blog.thewhiskyexchange.com/core/wp-content/uploads/2018/09/Cladach.jpg", 40.00, 156.99, "A gloriously pleasing and affirming whisky that captures the character of coastal malts perfectly.", 0, false);
         whiskyRepository.save(whisky3);
 
-        Whisky whisky4 = new Whisky("The Oban Bay", "The Nights Watch", "Highland", 56.414989, -5.472700, "43%", "70cl", "https://cdn.shopify.com/s/files/1/0248/6121/2758/products/5000267173795_T2_1024x1024@2x.jpg", 14.99, 45.99, "The liquids richness is balanced with a woody, spicy dryness that The Nights Watch could enjoy even on the coldest of nights.", 0, false);
+        Whisky whisky4 = new Whisky("Oban Bay", "The Nights Watch", "Highland", 56.414989, -5.472700, "43%", "70cl", "https://cdn.shopify.com/s/files/1/0248/6121/2758/products/5000267173795_T2_1024x1024@2x.jpg", 14.99, 45.99, "The liquids richness is balanced with a woody, spicy dryness that The Nights Watch could enjoy even on the coldest of nights.", 0, false);
         whiskyRepository.save(whisky4);
 
         Whisky whisky5 = new Whisky("Blair Athol", "12 Year Old Flora and Fauna", "Highland", 56.697676, -3.718592, "43%", "70cl", "https://cdn.shopify.com/s/files/1/0248/6121/2758/products/blair-athol-12yo-faf_1024x1024@2x.jpg", 12.99, 60.49, "A full, rich and spicy 12 year old single malt whisky. Slightly dry on the finish.", 0, false);

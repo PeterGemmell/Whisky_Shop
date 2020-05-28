@@ -27,7 +27,7 @@ class ShoppingCartOverlay extends Component {
       whisky={whisky}
       indexInCart={index}
       removeFromCart={this.props.removeFromCart}
-      updateAmountToPay={this.props.updateAmountToPay} />
+      updateAmountToPay={this.updateAmountToPay} />
     });
 
     let amountToPay = 0;

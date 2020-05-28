@@ -44,6 +44,10 @@ handleNotOfAgeClick = () => {
   this.setState({display: "failure"})
 }
 
+handleOfAgeCick = () => {
+  this.setState({display: "pass"})
+}
+
 handleMonthChange = (e) => {
   this.setState({userMonth: parseInt(e.target.value)})
 }
@@ -73,6 +77,7 @@ render () {
         handleMonthChange={this.handleMonthChange}
         handleYearChange={this.handleYearChange}
         handleNotOfAgeClick={this.handleNotOfAgeClick}
+        handleOfAgeCick ={this.handleOfAgeCick}
         toggleCheck={this.toggleCheck}
         />
     )

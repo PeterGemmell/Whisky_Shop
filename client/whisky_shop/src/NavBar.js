@@ -5,7 +5,7 @@ import ShoppingCart from './components/cart/ShoppingCart.js';
 const NavBar =(props) => {
     return(
       <header>
-      <h1 className="title-header">WHISKY</h1>
+      <h1 className="title-header">THE DRAM</h1>
 
       <ul className="ul-links-bar">
       <li className="navLink">

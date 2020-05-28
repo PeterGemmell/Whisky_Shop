@@ -3,8 +3,8 @@ import React from 'react';
 
 function AgeForm(props) {
   return(
-    <div className="App">
-      <div className="App-container">
+    <div className="Age">
+      <div className="age-container">
         <h3>Welcome to</h3>
         <h1>THE DRAM</h1>
         <p>Are you 18 or older?</p>
@@ -34,9 +34,9 @@ function AgeForm(props) {
               value={props.isChecked}
               onChange={props.toggleCheck} />
           </label><br/>
-          <input type="submit" value="Enter" />
+          <button className="pass-button" onClick={e => props.handleOfAgeCick(window.location=('/whiskies'))}>Enter</button>
         </form>
-        <button className="link-button" onClick={e => props.handleNotOfAgeClick()}>I am not of legal drinking age</button>
+        <button className="link-button" onClick={e => props.handleNotOfAgeClick(window.open('http://www.google.com'))}>I am not of legal drinking age</button>
       </div>
     </div>
   )

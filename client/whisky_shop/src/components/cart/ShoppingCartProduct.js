@@ -22,7 +22,7 @@ class ShoppingCartProduct extends Component {
   render(){
     return(
       <tr className="items-in-cart">
-      <td><img> src={this.props.whisky.imgLink}></img></td>
+      <td><img src={this.props.whisky.imgLink}></img></td>
       <td>{this.props.whisky.productName}</td>
       <td>£{this.props.whisky.retailPrice}</td>
       <td>

@@ -25,8 +25,8 @@ class WhiskyContainer extends Component {
   }
   addToCart(whisky){
     let tempCart = this.state.itemsInCart;
-    tempCart.push(this.state.whiskies[whisky.id]); // possible -1
-    this.state.whiskies[whisky.id].inCart = true; // commenting out removes red on button.
+    tempCart.push(this.state.whiskies[whisky.id -1]); // possible -1
+    // this.state.whiskies[whisky.id].inCart = true; // commenting out removes red on button.
     this.state.whiskies[whisky.id].quantityInCart = 1;
     this.setState({
       quantity: this.state.quantity +1,

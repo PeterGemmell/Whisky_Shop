@@ -28,3 +28,6 @@ The app is built using:
 ##### Back-end (server):
 * In IntelliJ, open the server folder and run the app.
 * Back-end available at http://localhost:8080/api/h2/
+
+![Imgur](https://i.imgur.com/2qe9qiW.png)
+![Imgur](https://i.imgur.com/2TSCczf.png)
